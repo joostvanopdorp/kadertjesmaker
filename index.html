@@ -209,7 +209,7 @@ $( document ).ready(function() {
     event.preventDefault();
 	
 
-	var subject = $("#SUBJECT").val();
+var subject = tinymce.activeEditor.getContent();
 var radios = document.querySelectorAll('input[type="radio"]:checked');
 var kleur = radios.length>0? radios[0].value: null;
 		

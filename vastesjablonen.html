@@ -61,8 +61,13 @@ margin:0 0 10px 0;
 padding:10px;
 max-width: 657px;
 }
+
 	
 </style>
+
+
+
+
 
   <script src='https://cdn.tiny.cloud/1/f4bltrr6q0uyv4a7mis6ldpa7dsl8mefx7k1vpfc9k2ial43/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
   
@@ -133,8 +138,14 @@ function selectBackground(){
 
 <br>
 
-<div id="OUTPUT" class="row rdct_item" style="display: block;">
-<h4>Kopieer deze code en plak ze als embed in het artikel</h4>
+<div class="row rdct_item">
+<button type="button" id="submit_btn" class="btn btn-danger" onclick="klikthijs()">Toon embedcode</button>
+</div>
+
+<br> 
+
+<div id="outputthijs" class="row rdct_item" style="display: none;">
+<h4>Kopieer onderstaande code en plak ze als embed in het artikel</h4>
 <div class="output_field_wrapper wordwrap"><span id="OUTPUT_FIELD">&lt;div data-mht-block="article-detail__article-header"&gt;
 &lt;!--[START-block-widget] 7f4dbec9-5bb0-4e70-8dd1-2357eddc3f82 --&gt;
 &lt;div class="widget" style="margin: 1em 0;"&gt; 
@@ -193,12 +204,21 @@ zapt zich elke week een weg door het tv-landschap
 &lt;/div&gt;
 </div>
 
-
 </div>
 
 </div>
 
 
+<script>
+function klikthijs() {
+  var x = document.getElementById("outputthijs");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 
 <br>
 <div class="row rdct_item" align="center">

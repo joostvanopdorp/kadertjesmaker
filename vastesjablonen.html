@@ -145,8 +145,10 @@ function selectBackground(){
 <br> 
 
 <div id="outputthijs" class="row rdct_item" style="display: none; background-color: #efefef; padding: 10px">
-<h4>Kopieer onderstaande code en plak ze als embed in het artikel</h4>
-<div class="output_field_wrapper wordwrap"><span id="OUTPUT_FIELD">&lt;div data-mht-block="article-detail__article-header"&gt;
+<h4>Kopieer onderstaande code en plak ze als embed in het artikel
+<br><span class="small">&#8226; <b>Klik op de code</b> om alle tekst te selecteren
+<br>&#8226; Gebruik daarna <b>CTRL + C of rechtermuisknop</b> om de code te kopi&#235;ren</span></h4>
+<div class="output_field_wrapper wordwrap"><span id="codethijs" onclick="selectText(this.id)">&lt;div data-mht-block="article-detail__article-header"&gt;
 &lt;!--[START-block-widget] 7f4dbec9-5bb0-4e70-8dd1-2357eddc3f82 --&gt;
 &lt;div class="widget" style="margin: 1em 0;"&gt; 
 &lt;style&gt;
@@ -217,6 +219,31 @@ function klikthijs() {
   } else {
     x.style.display = "none";
   }
+}
+</script>
+
+<script>
+function selectText(id){
+	var sel, range;
+	var el = document.getElementById(id); //get element id
+	if (window.getSelection && document.createRange) { //Browser compatibility
+	  sel = window.getSelection();
+	  if(sel.toString() == ''){ //no text selection
+		 window.setTimeout(function(){
+			range = document.createRange(); //range object
+			range.selectNodeContents(el); //sets Range
+			sel.removeAllRanges(); //remove all ranges from selection
+			sel.addRange(range);//add Range to a Selection.
+		},1);
+	  }
+	}else if (document.selection) { //older ie
+		sel = document.selection.createRange();
+		if(sel.text == ''){ //no text selection
+			range = document.body.createTextRange();//Creates TextRange object
+			range.moveToElementText(el);//sets Range
+			range.select(); //make selection.
+		}
+	}
 }
 </script>
 

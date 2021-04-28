@@ -115,141 +115,90 @@ function selectBackground(){
 
 <div id="gva_header">
 	<img src="https://markup.gva.be/extra/assets/img/gazet-van-antwerpen.svg?v=20170123T084600" alt="Gazet van Antwerpen"><br>
-	Kadertjesmaker
+	Kadertjesmaker: vaste sjablonen
 </div>
+
 
 <div id="rdct_form">
 
 <div class="row rdct_item" style="text-align: center;">
-<span class="small" style="background-color: #efefef; color: black">Op zoek naar de vaste, niet-aanpasbare sjablonen? <a href="vastesjablonen.html">Klik dan hier</a>.</span>
+<span class="small" style="background-color: #efefef; color: black">Op zoek naar het hulpmiddel om zelf kadertjes op te maken? <a href="index.html">Klik dan hier</a>.</span>
 </div>
 
-	<div class="row rdct_item">
-<h4>1. Klik in het kadertje hieronder, vul tekst in en maak op met de tekstverwerker
-<br><span class="small">&#8226; Via de <b>knop met de stempel</b> uiterst links kan je een sjabloon kiezen (bv. kadertje voor assisenstuk)</a></span>
-<br><span class="small">&#8226; Voor een afbeelding moet je bij <b>Source</b> de url invullen, foto's uploaden kan <a href="https://mnt.gva.be/images/imagesoverview.aspx?menuid=24&submenuid=122" target="_blank"><u>hier in MNT</u></a></span>
-</h4>
-
-<br><br>
-
-  <form method="post">
-
-<div class="results" id="PreviewResults" style="background-color:#c1e8e3;">
-
-</div>
-
-  </form>
-
-</div>
-
-<div class="selectors">
-<select id=selector>
-    <option value="#c1e8e3">Blauw</option>
-    <option value="#efefef">Lichtgrijs</option>
-    <option value="#d7d7d7">Grijs</option>
-    <option value="#e20714">Rood</option>
-    <option value="#ffffff">Wit</option>
-    <option value="#292c2f">Zwart</option>
-</select> 
-<button onclick="selectBackground()">Test achtergrondkleur</button>
-</div>
-	
-<br><br>
 
 <div class="row rdct_item">
-
-<h4>2. Kies een achtergrondkleur
-	<br><span class="small">&#8226; Via de <b>testknop hierboven</b> kan je de kleur aanpassen in het voorbeeld
-	<br>&#8226; Kies de definitieve kleur door het juiste <b>bolletje hieronder</b> aan te duiden</span></h4>
+<h4>1. Column Thijs Van den Bos</h4>
+<p><img src="columntv.jpg"></p>
+</div>
 
 <br>
 
-		<input id="KLEURBLAUW" type="radio" name="KLEUR" value="#c1e8e3" checked="checked"> <label for="KLEURBLAUW"><span style="background-color: #c1e8e3;">Blauw</span> <i>(standaard)</i></label><br>
-		<input id="KLEURLICHTGRIJS" type="radio" name="KLEUR" value="#efefef"> <label for="KLEURLICHTGRIJS"><span style="background-color: #efefef;">Lichtgrijs</span></label><br>
-		<input id="KLEURGRIJS" type="radio" name="KLEUR" value="#d7d7d7"> <label for="KLEURGRIJS"><span style="background-color: #d7d7d7;">Grijs</span></label><br>
-		<input id="KLEURROOD" type="radio" name="KLEUR" value="#e20714"> <label for="KLEURROOD"><span style="color: white; background-color: #e20714;">Rood</span></label><br>
-		<input id="KLEURWIT" type="radio" name="KLEUR" value="#ffffff"> <label for="KLEURWIT"><span style="background-color: #ffffff; border: dotted 1px #000000;">Wit</span></label><br>
-		<input id="KLEURZWART" type="radio" name="KLEUR" value="#292c2f"> <label for="KLEURZWART"><span style="color: white; background-color: #292c2f;">Zwart</span></label><br>
+<div id="OUTPUT" class="row rdct_item" style="display: block;">
+<h4>Kopieer deze code en plak ze als embed in het artikel</h4>
+<div class="output_field_wrapper wordwrap"><span id="OUTPUT_FIELD">&lt;div data-mht-block="article-detail__article-header"&gt;
+&lt;!--[START-block-widget] 7f4dbec9-5bb0-4e70-8dd1-2357eddc3f82 --&gt;
+&lt;div class="widget" style="margin: 1em 0;"&gt; 
+&lt;style&gt;
+.headshot-wrapper &lcub;
+font-size: 16px;
+display: flex;
+background-color: rgb(239, 239, 239);
+padding-top: .5em;
+font-family: sans-serif;
+margin: 1em 0;
+max-height: 140px;
+&rcub;
+
+.headshot-info_naam &lcub;
+font-size: 1.3em;
+font-weight: 800;
+font-family: 'Merriweather'
+&rcub;
+
+.headshot-info_subinfo &lcub;
+font-size: 1em;
+&rcub;
+
+.headshot-info &lcub;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+&rcub;
+.headshot &lcub;
+max-width: 25%;
+&rcub;
+
+.headshot img &lcub;
+max-height: 100%;
+&rcub;
+
+&lt;/style&gt;
+
+&lt;div class="headshot-wrapper"&gt;
+&lt;div class="headshot"&gt;
+&lt;img src="https://static.gva.be/Assets/Images_Upload/2020/09/16/thijs2.0.png" alt=""&gt;
+&lt;/div&gt;
+&lt;div class="headshot-info"&gt;
+&lt;div class="headshot-info_naam"&gt;
+Thijs Van den Bos 
+&lt;/div&gt;
+&lt;div class="headshot-info_subinfo"&gt;
+zapt zich elke week een weg door het tv-landschap 
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;/div&gt;
+
+&lt;!--[END-block-widget] 7f4dbec9-5bb0-4e70-8dd1-2357eddc3f82 --&gt;
+&lt;/div&gt;
+</div>
+
 
 </div>
 
-<br><br>
-
-	<div class="row rdct_item">
-		<button type="button" id="submit_btn" class="btn btn-danger">Bevestig</button>
-	</div>
-
-
-<br>
-
-	<div id="OUTPUT" class="row rdct_item" style="display: block;">
-		<h4>3. Kopieer deze code en plak ze als embed in het artikel
-<br><span class="small">&#8226; <b>Klik in het vak</b> om alle tekst te selecteren
-<br>&#8226; Gebruik daarna <b>CTRL + C of rechtermuisknop</b> om de code te kopi&#235;ren</span></h4>
-		<div class="output_field_wrapper wordwrap"><span id="OUTPUT_FIELD">Druk op de knop <b>BEVESTIG</b> om de code aan te maken.</div>
-
-
 </div>
 
 
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<script>
-
-// A $( document ).ready() block.
-$( document ).ready(function() {
-    
-	
-	
-	$('#submit_btn').on('click', function(event) {
-    event.preventDefault();
-	
-
-var subject = tinymce.activeEditor.getContent();
-var radios = document.querySelectorAll('input[type="radio"]:checked');
-var kleur = radios.length>0? radios[0].value: null;
-		
-		
-	output = '<div style="margin:0 0 10px 0;padding:10px;background-color:' + kleur +'">' + subject +'</div>';
-		
-	$("#OUTPUT_FIELD").text(output);
-	$("#OUTPUT").show();
-		
-	//select all text in one click
-		jQuery.fn.selectText = function(){
-    var doc = document
-        , element = this[0]
-        , range, selection
-    ;
-    if (doc.body.createTextRange) {
-        range = document.body.createTextRange();
-        range.moveToElementText(element);
-        range.select();
-    } else if (window.getSelection) {
-        selection = window.getSelection();        
-        range = document.createRange();
-        range.selectNodeContents(element);
-        selection.removeAllRanges();
-        selection.addRange(range);
-    }
-};
-		
-	$('.output_field_wrapper').click(function() {
-        $(this).selectText();
-    });
-	//select all text in one click
-		
-		
-		
-});
-	
-});
-</script>
-
-</div>
 
 <br>
 <div class="row rdct_item" align="center">

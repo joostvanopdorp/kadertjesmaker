@@ -149,40 +149,38 @@ function selectBackground(){
 
   </form>
 
-</div>
 
-<div class="selectors">
-<select id=selector>
-    <option value="#c1e8e3">Blauw</option>
-    <option value="#efefef">Lichtgrijs</option>
-    <option value="#d7d7d7">Grijs</option>
-    <option value="#e20714">Rood</option>
-    <option value="#ffffff">Wit</option>
-    <option value="#292c2f">Zwart</option>
-</select> 
-<button onclick="selectBackground()">Test achtergrondkleur</button>
-</div>
 	
 <br><br>
 
 <div class="row rdct_item">
 
 <h4>2. Kies een achtergrondkleur
-	<br><span class="small">&#8226; Via de <b>testknop hierboven</b> kan je de kleur aanpassen in het voorbeeld
-	<br>&#8226; Kies de definitieve kleur door het juiste <b>bolletje hieronder</b> aan te duiden</span></h4>
+	<br><span class="small">&#8226; Via het <b>dropdownmenu</b> kan je de kleur aanpassen
+	<br>&#8226; Onder het menu staat van elke achtergrondkleur een <b>voorbeeld</b></span></h4>
+</div>
+
+<div class="selectors">
+<select id=selector onchange="selectBackground()">
+    <option value="#c1e8e3" ackground-color="#c1e8e3">Blauw</option>
+    <option value="#efefef">Lichtgrijs</option>
+    <option value="#d7d7d7">Grijs</option>
+    <option value="#e20714">Rood</option>
+    <option value="#ffffff">Wit</option>
+    <option value="#292c2f">Zwart</option>
+</select> 
+</div>
 
 <br>
 
-		<input id="KLEURBLAUW" type="radio" name="KLEUR" value="#c1e8e3" checked="checked"> <label for="KLEURBLAUW"><span style="background-color: #c1e8e3;">Blauw</span> <i>(standaard)</i></label><br>
-		<input id="KLEURLICHTGRIJS" type="radio" name="KLEUR" value="#efefef"> <label for="KLEURLICHTGRIJS"><span style="background-color: #efefef;">Lichtgrijs</span></label><br>
-		<input id="KLEURGRIJS" type="radio" name="KLEUR" value="#d7d7d7"> <label for="KLEURGRIJS"><span style="background-color: #d7d7d7;">Grijs</span></label><br>
-		<input id="KLEURROOD" type="radio" name="KLEUR" value="#e20714"> <label for="KLEURROOD"><span style="color: white; background-color: #e20714;">Rood</span></label><br>
-		<input id="KLEURWIT" type="radio" name="KLEUR" value="#ffffff"> <label for="KLEURWIT"><span style="background-color: #ffffff; border: dotted 1px #000000;">Wit</span></label><br>
-		<input id="KLEURZWART" type="radio" name="KLEUR" value="#292c2f"> <label for="KLEURZWART"><span style="color: white; background-color: #292c2f;">Zwart</span></label><br>
+<br><span style="background-color: #c1e8e3;">Blauw</span> <i>(standaard)</i></label><br>
+<br><span style="background-color: #efefef;">Lichtgrijs</span></label><br>
+<br><span style="background-color: #d7d7d7;">Grijs</span></label><br>
+<br><span style="color: white; background-color: #e20714;">Rood</span></label><br>
+<br><span style="background-color: #ffffff; border: dotted 1px #000000;">Wit</span></label><br>
+<br><span style="color: white; background-color: #292c2f;">Zwart</span></label><br>
 
-</div>
-
-<br><br>
+<br><br><br>
 
 	<div class="row rdct_item">
 		<button type="button" id="submit_btn" class="btn btn-danger">Bevestig</button>
@@ -218,11 +216,12 @@ $( document ).ready(function() {
 	
 
 var subject = tinymce.activeEditor.getContent();
-var radios = document.querySelectorAll('input[type="radio"]:checked');
-var kleur = radios.length>0? radios[0].value: null;
+var e = document.getElementById("selector");
+var BackgroundValue = e.options[e.selectedIndex].value;
+document.getElementById("PreviewResults").style.backgroundColor = BackgroundValue;
 		
 		
-	output = '<div style="margin:0 0 10px 0;padding:10px;font-family:Segoe UI,Roboto,Helvetica, Arial;font-size:16px;line-height:24px;background-color:' + kleur +'">' + subject +'</div>';
+	output = '<div style="margin:0 0 10px 0; padding:10px; font-family:&#39;Segoe UI&#39;,Roboto,Helvetica,Arial,sans-serif; font-size:16px; line-height:24px; background-color:'+ BackgroundValue +'">' + subject +'</div>';
 		
 	$("#OUTPUT_FIELD").text(output);
 	$("#OUTPUT").show();

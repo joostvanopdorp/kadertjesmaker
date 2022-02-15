@@ -81,7 +81,8 @@ tinymce.init({
         o.content = o.content 
             .replace(/(.*?)<br\s?\/?>/gi,'<p>$1</p>')
     },
-  plugins: 'link autolink image lists table code autoresize template visualblocks paste',
+  plugins: 'link autolink image lists table code autoresize template visualblocks paste contextmenu',
+  contextmenu: 'paste | link',
   default_link_target: '_blank',
   link_context_toolbar: true,
   min_width: 950,

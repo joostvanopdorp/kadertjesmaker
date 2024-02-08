@@ -1,11 +1,25 @@
 body {
     background: #efefef;
     font-family: 'Montserrat', sans-serif;
+    counter-reset: heading;
+}
+
+.hidden-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left: -10000px;
 }
 
 ul {
     line-height: 1.25rem;
     margin: 0 -1rem;
+}
+
+h3:before {
+    content: counter(heading)". ";
+    counter-increment: heading;
 }
 
 header {

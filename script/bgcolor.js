@@ -20,14 +20,13 @@ function init() {
             if (colorOption.id === colorName) {
                 colorOption.style.backgroundColor = colorCode;
             }
-            if  (colorOption.id === colorName && (colorName === 'zwart' || colorName === 'rood')) {
+            if (colorOption.id === colorName && (colorName === 'zwart' || colorName === 'rood')) {
                 colorOption.style.color = 'white';
             }
         }
     }
 
     colorSelect.addEventListener('change', () => {
-        let backgroundColorValue = colorSelect.options[colorSelect.selectedIndex].value;
-        previewDiv.style.backgroundColor = backgroundColorValue;
+        previewDiv.style.backgroundColor = colorSelect.options[colorSelect.selectedIndex].value;
     });
 }

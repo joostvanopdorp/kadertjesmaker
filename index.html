@@ -13,25 +13,30 @@
 </head>
 <body>
 <header>
-    <section>
-        <img src="https://markup.gva.be/extra/assets/img/gazet-van-antwerpen.svg?v=20170123T084600"
-             alt="Logo Gazet van Antwerpen">
-        <h1>Kadertjesmaker</h1>
-    </section>
+    <img src="https://markup.gva.be/extra/assets/img/gazet-van-antwerpen.svg?v=20170123T084600"
+         alt="Logo Gazet van Antwerpen">
+    <h1>Kadertjesmaker</h1>
 </header>
 <main>
-    <section class="steps" id="step-one">
-        <h2>1. Klik in kadertje hieronder, vul tekst in en maak op</h2>
-        <ul>
-            <li>Via de knop met de stempel uiterst links kan je een <strong>sjabloon</strong> kiezen</a></li>
-            <li>Voor een <strong>afbeelding</strong> moet je bij <em>Source</em> de url invullen, foto's uploaden kan <a href="https://mnt.gva.be/images/imagesoverview.aspx?menuid=24&submenuid=122" target="_blank"> hier in MNT</a></li>
-            <li>Onder een <strong>kopje</strong> (H1, H2 of H3) zet je best een witregel (met een extra <em>Enter</em>)</li>
-            <li>Een <strong>zachte return</strong> zetten kan met <em>Shift + Enter</em></li>
-        </ul>
-    </section>
-    <section class="steps" id="step-two">
-        <h2>2. Kies achtergrondkleur</h2>
-        <label for="select-color">Pas achtergrondkleur aan:</label>
+    <article>
+        <h2 class="hidden-title">Stappen om kadertje te maken</h2>
+        <section class="steps" id="step-one">
+            <h3>Klik in kadertje hieronder, vul tekst in en maak op</h3>
+            <ul>
+                <li>Via de knop met de stempel uiterst links kan je een <strong>sjabloon</strong> kiezen</a></li>
+                <li>Voor een <strong>afbeelding</strong> moet je bij
+                    <em>Source</em> de url invullen, foto's uploaden kan
+                    <a href="https://mnt.gva.be/images/imagesoverview.aspx?menuid=24&submenuid=122" target="_blank"> hier in MNT</a>
+                </li>
+                <li>Onder een <strong>kopje</strong> (H1, H2 of H3) zet je best een witregel (met een extra
+                    <em>Enter</em>)
+                </li>
+                <li>Een <strong>zachte return</strong> zetten kan met <em>Shift + Enter</em></li>
+            </ul>
+        </section>
+        <section class="steps" id="step-two">
+            <h3>Kies achtergrondkleur</h3>
+            <label for="select-color">Pas achtergrondkleur aan:</label>
             <select id="select-color" name="select-color">
                 <option value="#c1e8e3" id="blauw">Blauw</option>
                 <option value="#efefef" id="lichtgrijs">Lichtgrijs</option>
@@ -41,25 +46,30 @@
                 <option value="#292c2f" id="zwart">Zwart</option>
                 <option value="#fff2c6" id="geel">Geel</option>
             </select>
-    </section>
-    <section class="steps" id="step-three">
-        <h2>3. Druk op bevestigingsknop om aan te maken</h2>
-        <div class="steps">
-            <button type="button" class="button" id="confirm">Bevestig</button>
-        </div>
-    </section>
-    <section class="steps" id="step-four">
-        <h2>4. Kopieer deze code en plak als embed in artikel</h2>
-        <ul>
-            <li><strong>Klik in het tekstvak</strong> om de embedcode automatisch te selecteren en kopiëren</li>
-            <li>Geen bevestiging? Kopieer de code manueel met <em>CTRL + C</em> of <em>rechtermuisknop</em></li>
-        </ul>
-        <div id="output-field">Druk op de knop <strong>BEVESTIG</strong> om de embedcode aan te maken, die dan hier verschijnt.</div>
-    </section>
+        </section>
+        <section class="steps" id="step-three">
+            <h3>Druk op bevestigingsknop om aan te maken</h3>
+            <div class="steps">
+                <button type="button" class="button" id="confirm">Bevestig</button>
+            </div>
+        </section>
+        <section class="steps" id="step-four">
+            <h3>Kopieer deze code en plak als embed in artikel</h3>
+            <ul>
+                <li><strong>Klik in het tekstvak</strong> om de embedcode automatisch te selecteren en kopiëren</li>
+                <li>Geen bevestiging? Kopieer de code manueel met <em>CTRL + C</em> of <em>rechtermuisknop</em></li>
+            </ul>
+            <div id="output-field">Druk op de knop
+                <strong>BEVESTIG</strong> om de embedcode aan te maken, die dan hier verschijnt.
+            </div>
+        </section>
+    </article>
 </main>
 <footer>
     <aside>
-        <p>Gemaakt door <a href="mailto:joost.vanopdorp@gazetvanantwerpen.be">Joost Van Opdorp</a> voor <a href="http://www.gva.be" target="_blank">Gazet van Antwerpen</a></p>
+        <h2 class="hidden-title">Credits</h2>
+        <p>Gemaakt door <a href="mailto:joost.vanopdorp@gazetvanantwerpen.be">Joost Van Opdorp</a> voor
+            <a href="http://www.gva.be" target="_blank">Gazet van Antwerpen</a></p>
     </aside>
 </footer>
 </body>

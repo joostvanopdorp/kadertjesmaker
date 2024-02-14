@@ -22,6 +22,10 @@ h3:before {
     counter-increment: heading;
 }
 
+div h3:before {
+    content: "";
+}
+
 header {
     text-align: center;
     color: white;

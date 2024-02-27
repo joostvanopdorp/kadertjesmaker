@@ -9,6 +9,7 @@ function init() {
         wit: '#ffffff',
         zwart: '#292c2f',
         geel: '#fff2c6',
+        roze: '#ffe0e4',
     };
 
     const colorSelect = document.getElementById('select-color');

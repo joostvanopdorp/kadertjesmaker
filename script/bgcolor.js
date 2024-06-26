@@ -2,14 +2,14 @@ window.addEventListener('load', init);
 
 function init() {
     const colors = {
-        blauw: '#c1e8e3',
+        lichtpaars: '#ece0ff',
+        paars: '#5100c3',
+        perzik: '#fcc8be',
         lichtgrijs: '#efefef',
         grijs: '#d7d7d7',
         rood: '#e20714',
         wit: '#ffffff',
-        zwart: '#292c2f',
-        geel: '#fff2c6',
-        roze: '#ffe0e4',
+        zwart: '#292c2f'
     };
 
     const colorSelect = document.getElementById('select-color');
@@ -21,7 +21,7 @@ function init() {
             if (colorOption.id === colorName) {
                 colorOption.style.backgroundColor = colorCode;
             }
-            if (colorOption.id === colorName && (colorName === 'zwart' || colorName === 'rood')) {
+            if (colorOption.id === colorName && (colorName === 'zwart' || colorName === 'rood' || colorName === 'paars')) {
                 colorOption.style.color = 'white';
             }
         }
